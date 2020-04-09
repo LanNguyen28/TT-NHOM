@@ -1,7 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QL_Kho.Data;
 
 
 namespace QL_Kho
@@ -75,6 +82,11 @@ namespace QL_Kho
                     MessageBox.Show("Kiểm Tra Lại Mật Khẩu Hoặc Tài Khoản");
                 }
             }
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

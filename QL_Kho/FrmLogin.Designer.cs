@@ -68,12 +68,15 @@
             // 
             this.Login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Login.BackgroundImage")));
             this.Login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Login.Enabled = false;
             this.Login.Location = new System.Drawing.Point(0, 91);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(517, 231);
             this.Login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Login.TabIndex = 29;
             this.Login.TabStop = false;
+            this.Login.Visible = false;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // label2
             // 
@@ -100,6 +103,7 @@
             // ckcSave
             // 
             this.ckcSave.AutoSize = true;
+            this.ckcSave.ForeColor = System.Drawing.Color.Red;
             this.ckcSave.Location = new System.Drawing.Point(199, 207);
             this.ckcSave.Name = "ckcSave";
             this.ckcSave.Size = new System.Drawing.Size(63, 17);
@@ -110,6 +114,7 @@
             // ckcHienpw
             // 
             this.ckcHienpw.AutoSize = true;
+            this.ckcHienpw.ForeColor = System.Drawing.Color.Red;
             this.ckcHienpw.Location = new System.Drawing.Point(342, 207);
             this.ckcHienpw.Name = "ckcHienpw";
             this.ckcHienpw.Size = new System.Drawing.Size(95, 17);
@@ -127,7 +132,7 @@
             this.btnThoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnThoat.ForeColor = System.Drawing.Color.Red;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThoat.Location = new System.Drawing.Point(342, 230);
@@ -146,6 +151,7 @@
             this.btnDangnhap.FlatAppearance.BorderSize = 0;
             this.btnDangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangnhap.ForeColor = System.Drawing.Color.Red;
             this.btnDangnhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangnhap.Image")));
             this.btnDangnhap.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnDangnhap.Location = new System.Drawing.Point(144, 230);
@@ -177,9 +183,8 @@
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(519, 334);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -191,9 +196,11 @@
             this.Controls.Add(this.txtacc);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
-            this.Text = "FrmLogin";
+            this.Text = "  ";
+            this.TransparencyKey = System.Drawing.SystemColors.Control;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Login)).EndInit();
