@@ -85,7 +85,27 @@ namespace QL_Kho
             }
         }
 
-  
-       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnthongke_Click(object sender, EventArgs e)
+        {
+            UC_ThongKe a = new UC_ThongKe();
+            a.Dock = DockStyle.Fill;
+            panel2.Controls.Add(a);
+            foreach (Control ctrl in panel2.Controls)
+            {
+                if (ctrl != a)
+                    ctrl.Dispose();
+            }
+        }
+
+        private void hELPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("file:///C:/Users/Admin/Desktop/TTNhom_))/Help/abc.html");
+
+        }
     }
 }
