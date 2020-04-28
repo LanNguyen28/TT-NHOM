@@ -61,7 +61,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";

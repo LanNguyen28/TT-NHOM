@@ -93,6 +93,7 @@
             this.dgv_tknv.Name = "dgv_tknv";
             this.dgv_tknv.Size = new System.Drawing.Size(687, 268);
             this.dgv_tknv.TabIndex = 11;
+            this.dgv_tknv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_tknv_CellContentClick);
             // 
             // panel1
             // 

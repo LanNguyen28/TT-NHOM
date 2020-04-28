@@ -49,5 +49,10 @@ namespace QL_Kho.Gui
         {
             textBox1.Text = "";
         }
+
+        private void dgv_tknv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
