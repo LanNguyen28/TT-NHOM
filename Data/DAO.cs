@@ -68,8 +68,6 @@ namespace QL_Kho.Data
                 new SqlParameter("@maNCC", a.MaNCC),
                 new SqlParameter("@tenNCC", a.TenNCC),
                 new SqlParameter("@diaChi", a.DiaChi),
-                new SqlParameter("@SDT", a.SoDT),
-                new SqlParameter("@email", a.Email),
             };
             return Dataprovider.ExecuteNonQuery("them_NCC", para);
         }
@@ -137,8 +135,7 @@ namespace QL_Kho.Data
                 new SqlParameter("@maNCC", a.MaNCC),
                 new SqlParameter("@tenNCC", a.TenNCC),
                 new SqlParameter("@diaChi", a.DiaChi),
-                new SqlParameter("@SDT", a.SoDT),
-                new SqlParameter("@email", a.Email),
+                
             };
             return Dataprovider.ExecuteNonQuery("sua_NCC", para);
         }
